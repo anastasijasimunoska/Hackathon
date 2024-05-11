@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #141414;
+  position: relative;
+}
+
+.logo-style{
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+}
+
+nav a img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+
+.main-div {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  color: #fff;
+}
+
+.main-div h1 {
+  font-size: 6.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 600;
+}
+
+.user-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user,
+.add-user-holder,
+.add-user-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user img {
+  height: 110px;
+  width: 110px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.user p,
+.add-user-holder button span {
+  text-align: center;
+  width: inherit;
+  bottom: -3.5rem;
+  left: 0;
+  text-transform: capitalize;
+  color: rgb(153, 153, 153);
+  font-size: 2rem;
+}
+
+.fa-plus-circle {
+  font-size: 7vw;
+  color: grey;
+  opacity: 0.8;
+}
+
+.add-user-button {
+  background-color: transparent;
+}
+
+.add-user-button:hover {
+  background-color: #fff;
+}
+
+.add-user-button:hover > .fa-plus-circle {
+  opacity: 1;
+}
+
+.styled-button {
+  border: 1px solid grey;
+  color: grey;
+  text-transform: uppercase;
+  padding: 0.8rem 2.6rem;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.styled-button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.add-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #141414;
+  border: 1px solid white;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 10px;
+}
+
+.add-user img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.add-user form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-user form input {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid white;
+  padding: 3px 5px;
+}
+
+.add-user form input:focus {
+  outline: none;
+  border: 1px solid white;
+}
+
+.add-user form button {
+  font-size: 20px;
+}

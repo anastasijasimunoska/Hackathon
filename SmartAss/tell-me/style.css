@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #141414;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
+
+.chat .chat-view {
+    width: 100%;
+    height: 95%;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.chat .chat-view .no-messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.chat .chat-view .no-messages h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+.chat .chat-view .no-messages p {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.chat .chat-view .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 20px auto;
+    padding: 15px 20px;
+}
+
+.chat .chat-view .message .user {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chat .chat-view .message .user img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: contain;
+}
+
+.chat .chat-view .message .user strong {
+    color: white;
+    font-size: 25px;
+}
+
+.chat .chat-view .message p {
+    width: 90%;
+    color: white;
+    font-size: 17px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    border-left: 3px solid white;
+    padding-left: 50px;
+}
+
+.chat .button-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.chat button {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #141414;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.chat button img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+.chat button:hover {
+    filter: invert(1);
+}
+
+#active-voice-button {
+    filter: invert(1);
+}

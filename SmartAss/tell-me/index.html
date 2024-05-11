@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Ask Me</title>
+    </head>
+
+    <body>
+        <section>
+            <div class="chat">
+                <div class="chat-view">
+                    <div class="no-messages">
+                        <h1>TellMe</h1>
+                        <p>Send a voice message to get a response from Smart Assistant.</p>
+                    </div>
+                </div>
+                
+                <div class="button-holder">
+                    <button class="voice-button" type="button">
+                        <img src="../images/voice.png" alt="VOICE">
+                    </button>
+    
+                    <button class="stop-button" type="button">
+                        <img src="../images/stop.png" alt="STOP">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <template class="message-template">
+            <div class="message">
+                <div class="user">
+                    <img src="../images/no-avatar.webp" alt="AVATAR">
+                    <strong></strong>
+                </div>
+
+                <p></p>
+            </div>
+        </template>
+
+        <template class="no-messages-template">
+            <div class="no-messages">
+                <h1>TellMe</h1>
+                <p>Send a voice message to get a response from Smart Assistant.</p>
+            </div>
+        </template>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

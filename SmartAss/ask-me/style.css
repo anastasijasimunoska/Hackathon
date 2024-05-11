@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #141414;
+}
+
+.side-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    border-right: 3px solid white;
+}
+
+.side-bar h3 {
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 3px solid white;
+    padding: 20px 0;
+}
+
+.side-bar button {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #141414;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.side-bar button:hover {
+    color: #141414;
+    background-color: white;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
+
+.chat .chat-view {
+    width: 100%;
+    height: 95%;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.chat .chat-view .no-messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.chat .chat-view .no-messages h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+.chat .chat-view .no-messages p {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.chat .chat-view .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 20px auto;
+    padding: 15px 20px;
+}
+
+.chat .chat-view .message .user {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chat .chat-view .message .user img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: contain;
+}
+
+.chat .chat-view .message .user strong {
+    color: white;
+    font-size: 25px;
+}
+
+.chat .chat-view .message p {
+    width: 90%;
+    color: white;
+    font-size: 17px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    border-left: 3px solid white;
+    padding-left: 50px;
+}
+
+.chat form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 5%;
+    border-top: 3px solid white;
+    padding: 20px 0;
+}
+
+.chat form textarea {
+    width: 60%;
+    color: white;
+    font-size: 20px;
+    background-color: #141414;
+    border-radius: 5px;
+    padding: 3px 5px;
+    resize: none;
+}
+
+.chat form button {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #141414;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.chat form button img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+.chat form button:hover {
+    filter: invert(1);
+}
+
+#active-voice-button {
+    filter: invert(1);
+}
